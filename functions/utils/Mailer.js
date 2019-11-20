@@ -2,7 +2,7 @@
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 
-module.exports.sendEmail = async function (recipient) {
+module.exports.sendEmail = async function (recipient, template) {
     const OAuth2 = google.auth.OAuth2;
     const APP_NAME = "FitHub";
     const clientID = "313017879174-smoahcsderaaprplpvg8a6ka3gtacg54.apps.googleusercontent.com";
@@ -37,7 +37,7 @@ module.exports.sendEmail = async function (recipient) {
         from: `${APP_NAME} <fithubdaxko@gmail.com>`,
         to: recipient, //sending to email IDs in app request, please check README.md
         subject: `Hello from ${APP_NAME}!`,
-        text: `Hi,\n Test email from ${APP_NAME}.`
+        html: template
     };
 
     smtpTransport.sendMail(mailOptions, (error, info) => {
