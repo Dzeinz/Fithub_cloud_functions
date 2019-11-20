@@ -99,20 +99,11 @@ module.exports = `
         --><!--
           --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]--><!--
       --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%);"><!--
-        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%);" width="276" align="left">
-          
-            <tbody><tr><td width="100%" valign="top" align="left" style="font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left;"><a style="color: #ffffff; text-decoration: underline;" target="_new" href="[unsubscribe_link]">Unsubscribe</a></td></tr>
-            
-          
-        </tbody></table><!--
+        --><!--
       --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
           --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276" class="mobile-hide"><![endif]--><!--
       --><div class="mobile-full mobile-hide" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%);"><!--
-        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%);" width="276" align="left">
-          
-            <tbody><tr><td width="100%" valign="top" align="right" style="font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: right;"><a href="[show_link]" style="color: #ffffff; text-decoration: underline;" target="_new">View in your browser</a></td></tr>
-          
-        </tbody></table><!--
+        --><!--
       --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
         --><!--
       --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
