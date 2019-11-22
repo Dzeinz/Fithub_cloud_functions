@@ -45,7 +45,14 @@ module.exports = functions.firestore
       endTime: new Date(newEvent.endTime._seconds * 1000).toISOString()
     };
 
-    createEvent(eventData, trainer.tokens);
+    const tokens = {
+      serverAuthCode: trainer.serverAuthCode || "",
+      accessToken: trainer.accessToken || "",
+      refreshToken: trainer.refreshToken || ""
+    };
+
+    console.log(`trainer tokens: ${JSON.stringify(tokens)}`);
+    createEvent(eventData, tokens);
   });
 
 async function createEvent(eventData, tokens) {
@@ -105,10 +112,8 @@ async function getOauthClient(userTokens) {
 
       const trainer = db.collection("users").doc(trainerId);
       trainer.update({
-        tokens: {
-          accessToken: tokens.access_token,
-          refreshToken: tokens.refresh_token
-        }
+        accessToken: tokens.access_token,
+        refreshToken: tokens.refresh_token
       });
 
       await oauth.setCredentials(tokens);
